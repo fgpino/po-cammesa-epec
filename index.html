@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partes Post Operativos CAMMESA · EPEC</title>
+<meta name="description" content="Home de tableros EPEC basados en Partes Post Operativos de CAMMESA: novedades, CVP y CMO, energía, potencia, generación y combustibles.">
+<style>
+:root{
+  --bg:#07152d;--bg2:#0b1f3f;--surface:#ffffff;--surface2:#f8fafc;--ink:#102033;--muted:#5f7086;
+  --line:#d9e3ef;--blue:#0b5ea8;--blue2:#1d76d3;--cyan:#00a6c8;--green:#0f8a57;
+  --shadow:0 20px 45px rgba(7,21,45,.16);--radius:22px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);
+  background:radial-gradient(circle at 10% 0%,rgba(0,166,200,.18),transparent 30%),linear-gradient(180deg,#edf4f9 0%,#f7fafc 46%,#eef3f8 100%);
+  line-height:1.48
+}
+a{color:inherit}
+.hero{background:linear-gradient(135deg,#03004f 0%,#0b2d73 46%,#0b5ea8 78%,#64a8d8 100%);color:#fff;padding:34px 28px 30px;border-bottom:1px solid rgba(255,255,255,.2)}
+.hero__inner{max-width:1380px;margin:0 auto;display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:end}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.74);font-weight:850;margin-bottom:10px}
+h1{font-size:42px;line-height:1.04;margin:0 0 12px;font-weight:900;letter-spacing:-.035em}
+.lead{font-size:16px;line-height:1.55;color:rgba(255,255,255,.88);max-width:920px;margin:0}
+.hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:var(--radius);padding:18px;backdrop-filter:blur(10px)}
+.hero-card h2{font-size:15px;margin:0 0 10px;color:#fff}.hero-card p{margin:0;color:rgba(255,255,255,.83);font-size:13px;line-height:1.5}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;border-radius:999px;text-decoration:none;font-weight:850;font-size:13px;padding:10px 15px;border:1px solid rgba(255,255,255,.34)}
+.btn.primary{background:#fff;color:#0b2d73;border-color:#fff}.btn.ghost{background:rgba(255,255,255,.09);color:#fff}
+.topnav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.topnav__inner{max-width:1380px;margin:0 auto;padding:10px 28px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.brand-mini{font-weight:900;color:#0b2d73;font-size:14px}.navlinks{display:flex;gap:8px;flex-wrap:wrap}
+.navlinks a{text-decoration:none;font-size:12px;font-weight:800;color:#34445a;background:#f1f5f9;border:1px solid #dbe5f0;border-radius:999px;padding:8px 11px}
+.main{max-width:1380px;margin:0 auto;padding:26px 28px 54px}
+.section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin:8px 0 16px}
+.section-head h2{font-size:26px;line-height:1.12;margin:0;color:#0b1f3a;letter-spacing:-.02em}
+.section-head p{margin:8px 0 0;color:var(--muted);font-size:14px;max-width:850px}
+.badge{display:inline-flex;align-items:center;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:850;background:#e9f2ff;color:#0b5ea8;border:1px solid #cde1fb;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card__top{padding:20px 20px 14px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+.card h3{font-size:21px;line-height:1.15;margin:0;color:#0b1f3a}
+.card .tag{display:inline-flex;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.tag.live{background:#e7f8f0;color:#087443}.tag.cost{background:#eaf5ff;color:#0b5ea8}.tag.next{background:#f3f4f6;color:#606a78}
+.card__body{padding:18px 20px 20px}.card__body p{margin:0 0 13px;color:#34445a;font-size:14px;line-height:1.55}
+.contents{display:grid;gap:8px;margin:14px 0}.contents div{display:flex;gap:9px;align-items:flex-start;color:#43536a;font-size:13px}
+.contents span{display:inline-flex;min-width:20px;height:20px;border-radius:999px;align-items:center;justify-content:center;background:#eef6ff;color:var(--blue);font-size:11px;font-weight:900;margin-top:0}
+.card__actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.open{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 14px;border-radius:13px;text-decoration:none;background:var(--blue);color:#fff;font-size:13px;font-weight:900}
+.open.secondary{background:#f8fafc;color:#0b1f3a;border:1px solid var(--line)}
+.meta{font-size:12px;color:#6b7a90;margin-top:12px;word-break:break-word}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-top:18px}
+.panel h2{font-size:22px;margin:0 0 8px;color:#0b1f3a}.panel p{color:#46566d;font-size:14px;line-height:1.58;margin:0 0 12px}
+.pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.step{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:14px}.step b{display:block;font-size:13px;color:#0b1f3a;margin-bottom:6px}.step span{font-size:12px;color:#607287;line-height:1.45}
+.future{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.future .tile{background:#fff;border:1px dashed #c7d4e3;border-radius:16px;padding:15px}
+.future h3{margin:0 0 7px;font-size:15px;color:#1f334a}.future p{margin:0;color:#607287;font-size:12px;line-height:1.45}
+.footer{max-width:1380px;margin:0 auto;padding:18px 28px 34px;color:#68778c;font-size:12px;line-height:1.45}
+code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5px}
+@media(max-width:1000px){.hero__inner,.grid{grid-template-columns:1fr}.pipeline,.future{grid-template-columns:repeat(2,1fr)}h1{font-size:34px}.section-head{flex-direction:column;align-items:flex-start}}
+@media(max-width:650px){.hero,.main,.topnav__inner,.footer{padding-left:16px;padding-right:16px}.pipeline,.future{grid-template-columns:1fr}.card__top{flex-direction:column}h1{font-size:29px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero__inner">
+    <div>
+      <div class="kicker">EPEC · CAMMESA · Partes Post Operativos</div>
+      <h1>Centro de tableros operativos sobre datos del Post Operativo CAMMESA</h1>
+      <p class="lead">Portal estático para consultar tableros HTML vinculados al seguimiento operativo de generación, novedades, costos variables, costo marginal operado, energía, potencia y combustibles de interés para EPEC.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#tableros">Ver tableros disponibles</a>
+        <a class="btn ghost" href="#como-usar">Cómo usar el sitio</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h2>Objetivo del sitio</h2>
+      <p>Reunir en una única home los tableros derivados de los Partes Post Operativos de CAMMESA, con una descripción clara del alcance de cada tablero antes de abrirlo.</p>
+    </aside>
+  </div>
+</header>
+
+<nav class="topnav">
+  <div class="topnav__inner">
+    <div class="brand-mini">Post Operativo CAMMESA · EPEC</div>
+    <div class="navlinks">
+      <a href="#tableros">Tableros</a>
+      <a href="#proximos">Próximos módulos</a>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+  <section id="tableros">
+    <div class="section-head">
+      <div>
+        <h2>Tableros disponibles</h2>
+        <p>Cada tablero se abre como página HTML independiente. La home no reemplaza los filtros ni gráficos propios de cada tablero; funciona como punto de entrada, descripción funcional y mapa de navegación.</p>
+      </div>
+      <span class="badge">2 tableros activos</span>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card__top"><div><h3>Novedades Post Operativo CAMMESA</h3></div><span class="tag live">Operación</span></div>
+        <div class="card__body">
+          <p>Tablero orientado al seguimiento técnico de novedades diarias asociadas a agentes, grupos y máquinas EPEC. Permite discriminar operación cotidiana, seguimiento condicional y eventos con seguimiento.</p>
+          <div class="contents">
+            <div><span>1</span><div>Filtros por fecha, agente, grupo por agente y nivel de alerta.</div></div>
+            <div><span>2</span><div>KPIs de novedades totales, criticidad, agentes y grupos afectados.</div></div>
+            <div><span>3</span><div>Gráficos de tendencias, novedades por agente, novedades por grupo y línea de tiempo horaria.</div></div>
+            <div><span>4</span><div>Tablas de grupos críticos, eventos con seguimiento, eventos condicionales y referencias metodológicas.</div></div>
+          </div>
+          <div class="card__actions">
+            <a class="open" href="tableros/Tablero_Novedades_PO_CAMMESA.html">Abrir tablero</a>
+            <a class="open secondary" href="tableros/Tablero_Novedades_PO_CAMMESA.html" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
+          </div>
+          <div class="meta">Archivo: <code>tableros/Tablero_Novedades_PO_CAMMESA.html</code></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top"><div><h3>CVP y CMO</h3></div><span class="tag cost">Costos</span></div>
+        <div class="card__body">
+          <p>Tablero para analizar la relación horaria entre el Costo Variable de Producción de los grupos EPEC y el Costo Marginal Operado del sistema.</p>
+          <div class="contents">
+            <div><span>1</span><div>Filtros por fecha, hora, grupo, subtipo, condición económica y texto libre.</div></div>
+            <div><span>2</span><div>Evolución horaria comparada de CVP promedio y CMO promedio.</div></div>
+            <div><span>3</span><div>Identificación visual de tramos donde CVP supera al CMO y donde CVP queda por debajo o igual al CMO.</div></div>
+            <div><span>4</span><div>Promedio por grupo, lectura para usuario y tabla de registros CVP-CMO filtrados.</div></div>
+          </div>
+          <div class="card__actions">
+            <a class="open" href="tableros/CVP_y_CMO.html">Abrir tablero</a>
+            <a class="open secondary" href="tableros/CVP_y_CMO.html" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
+          </div>
+          <div class="meta">Archivo: <code>tableros/CVP_y_CMO.html</code></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="proximos" class="panel">
+    <h2>Próximos módulos previstos</h2>
+    <p>La estructura está preparada para incorporar nuevos tableros HTML sin cambiar la lógica general del sitio. Cada nuevo tablero se sumará como una tarjeta adicional con su descripción, alcance y enlace operativo.</p>
+    <div class="future">
+      <div class="tile"><h3>Energía y potencia</h3><p>Seguimiento de energía, potencia disponible, potencia despachada y evolución temporal.</p></div>
+      <div class="tile"><h3>Generación</h3><p>Análisis de generación por grupo, tecnología, día operativo y comportamiento horario.</p></div>
+      <div class="tile"><h3>Combustibles</h3><p>Consumo, cambios de combustible, restricciones y eventos asociados al abastecimiento.</p></div>
+      <div class="tile"><h3>Disponibilidad y restricciones</h3><p>Tableros futuros para disponibilidad, indisponibilidad, mantenimientos y limitaciones.</p></div>
+    </div>
+  </section>
+
+  <section id="como-usar" class="panel">
+    <h2>Cómo usar el sitio</h2>
+    <p>La home funciona como índice analítico. Antes de ingresar a cada tablero, el usuario puede conocer el alcance del contenido, los filtros disponibles y el tipo de lectura operativa esperada.</p>
+    <div class="pipeline">
+      <div class="step"><b>1. Elegir tablero</b><span>Seleccionar el tema operativo que se desea analizar: novedades, CVP-CMO u otros módulos futuros.</span></div>
+      <div class="step"><b>2. Aplicar filtros</b><span>Dentro del tablero, acotar fechas, grupos, agentes, condición o tipo de evento según corresponda.</span></div>
+      <div class="step"><b>3. Revisar gráficos</b><span>Interpretar tendencias, comparativos, barras por grupo, líneas horarias y eventos destacados.</span></div>
+      <div class="step"><b>4. Consultar registros</b><span>Validar la información en las tablas detalladas incluidas en cada HTML.</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  Sitio de tableros EPEC basado en información procesada de Partes Post Operativos de CAMMESA.
+  Generado para publicación estática en GitHub Pages. Última generación de home: 24/07/2026.
+</footer>
+</body>
+</html>
