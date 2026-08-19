@@ -42,7 +42,7 @@ h1{font-size:42px;line-height:1.04;margin:0 0 12px;font-weight:900;letter-spacin
 .card__top{padding:20px 20px 14px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
 .card h3{font-size:21px;line-height:1.15;margin:0;color:#0b1f3a}
 .card .tag{display:inline-flex;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
-.tag.live{background:#e7f8f0;color:#087443}.tag.cost{background:#eaf5ff;color:#0b5ea8}.tag.next{background:#f3f4f6;color:#606a78}
+.tag.live{background:#e7f8f0;color:#087443}.tag.cost{background:#eaf5ff;color:#0b5ea8}.tag.energy{background:#fff7e6;color:#9a5a00}.tag.fuel{background:#fff3e5;color:#a24d00}.tag.next{background:#f3f4f6;color:#606a78}
 .card__body{padding:18px 20px 20px}.card__body p{margin:0 0 13px;color:#34445a;font-size:14px;line-height:1.55}
 .contents{display:grid;gap:8px;margin:14px 0}.contents div{display:flex;gap:9px;align-items:flex-start;color:#43536a;font-size:13px}
 .contents span{display:inline-flex;min-width:20px;height:20px;border-radius:999px;align-items:center;justify-content:center;background:#eef6ff;color:var(--blue);font-size:11px;font-weight:900;margin-top:0}
@@ -98,7 +98,7 @@ code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5
         <h2>Tableros disponibles</h2>
         <p>Cada tablero se abre como página HTML independiente. La home no reemplaza los filtros ni gráficos propios de cada tablero; funciona como punto de entrada, descripción funcional y mapa de navegación.</p>
       </div>
-      <span class="badge">3 tableros activos</span>
+      <span class="badge">4 tableros activos</span>
     </div>
 
     <div class="grid">
@@ -139,7 +139,7 @@ code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5
       </article>
 
       <article class="card">
-        <div class="card__top"><div><h3>Energía y Potencia</h3></div><span class="tag next">Energía</span></div>
+        <div class="card__top"><div><h3>Energía y Potencia</h3></div><span class="tag energy">Energía</span></div>
         <div class="card__body">
           <p>Tablero para analizar la evolución horaria de la energía generada y la potencia calculada a partir de la tabla PO DIARIO Epec Calc, con foco en los últimos días disponibles del Post Operativo CAMMESA.</p>
           <div class="contents">
@@ -156,6 +156,26 @@ code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5
         </div>
       </article>
 
+
+      <article class="card">
+        <div class="card__top"><div><h3>Combustibles Quemados EPEC</h3></div><span class="tag fuel">Combustibles</span></div>
+        <div class="card__body">
+          <p>Tablero para analizar consumos diarios de combustibles quemados por grupos EPEC, con lectura de participación entre gas natural y combustible líquido, evolución diaria y precios promedio asociados.</p>
+          <div class="contents">
+            <div><span>1</span><div>Filtros por fecha desde, fecha hasta, central, grupo, subtipo y combustible.</div></div>
+            <div><span>2</span><div>KPIs de registros filtrados, período analizado, consumo total y participación porcentual de GN y GO.</div></div>
+            <div><span>3</span><div>Gráfico combinado de consumo diario por combustible y promedio de precio con doble eje de lectura.</div></div>
+            <div><span>4</span><div>Gráfico de participación porcentual de combustibles consumidos sobre el total filtrado.</div></div>
+          </div>
+          <div class="card__actions">
+            <a class="open" href="tableros/Tablero_Comb_Quemado_EPEC.html">Abrir tablero</a>
+            <a class="open secondary" href="tableros/Tablero_Comb_Quemado_EPEC.html" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
+          </div>
+          <div class="meta">Archivo: <code>tableros/Tablero_Comb_Quemado_EPEC.html</code></div>
+        </div>
+      </article>
+
+
     </div>
   </section>
 
@@ -164,7 +184,6 @@ code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5
     <p>La estructura está preparada para incorporar nuevos tableros HTML sin cambiar la lógica general del sitio. Cada nuevo tablero se sumará como una tarjeta adicional con su descripción, alcance y enlace operativo.</p>
     <div class="future">
       <div class="tile"><h3>Generación</h3><p>Análisis de generación por grupo, tecnología, día operativo y comportamiento horario.</p></div>
-      <div class="tile"><h3>Combustibles</h3><p>Consumo, cambios de combustible, restricciones y eventos asociados al abastecimiento.</p></div>
       <div class="tile"><h3>Disponibilidad y restricciones</h3><p>Tableros futuros para disponibilidad, indisponibilidad, mantenimientos y limitaciones.</p></div>
     </div>
   </section>
@@ -173,7 +192,7 @@ code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5
     <h2>Cómo usar el sitio</h2>
     <p>La home funciona como índice analítico. Antes de ingresar a cada tablero, el usuario puede conocer el alcance del contenido, los filtros disponibles y el tipo de lectura operativa esperada.</p>
     <div class="pipeline">
-      <div class="step"><b>1. Elegir tablero</b><span>Seleccionar el tema operativo que se desea analizar: novedades, CVP-CMO u otros módulos futuros.</span></div>
+      <div class="step"><b>1. Elegir tablero</b><span>Seleccionar el tema operativo que se desea analizar: novedades, CVP-CMO, energía y potencia, o combustibles.</span></div>
       <div class="step"><b>2. Aplicar filtros</b><span>Dentro del tablero, acotar fechas, grupos, agentes, condición o tipo de evento según corresponda.</span></div>
       <div class="step"><b>3. Revisar gráficos</b><span>Interpretar tendencias, comparativos, barras por grupo, líneas horarias y eventos destacados.</span></div>
       <div class="step"><b>4. Consultar registros</b><span>Validar la información en las tablas detalladas incluidas en cada HTML.</span></div>
@@ -183,7 +202,7 @@ code{background:#eef3f8;border:1px solid #d8e2ee;border-radius:6px;padding:1px 5
 
 <footer class="footer">
   Sitio de tableros EPEC basado en información procesada de Partes Post Operativos de CAMMESA.
-  Generado para publicación estática en GitHub Pages. Última generación de home: 04/08/2026.
+  Generado para publicación estática en GitHub Pages. Última generación de home: 19/08/2026.
 </footer>
 </body>
 </html>
